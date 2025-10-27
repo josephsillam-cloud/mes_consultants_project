@@ -1,0 +1,47 @@
+{% extends 'consultants/base.html' %}
+{% block content %}
+<h2 class="text-2xl font-bold mb-4">Tableau de bord – Consultants Banque & Assurance</h2>
+
+<form method="get" class="mb-6 flex items-center gap-4">
+  <label for="disponibilite_date" class="font-medium">Disponible avant le :</label>
+  <input type="date" id="disponibilite_date" name="disponibilite_date" value="{{ date_filtre }}" class="border p-2 rounded">
+  <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Filtrer</button>
+<a href="{% url 'dashboard' %}" class="text-gray-600 underline">Réinitialiser</a>
+
+</form>
+
+<table class="table-auto w-full border-collapse text-sm">
+  <thead>
+    <tr class="bg-gray-100 text-left">
+      <th class="border px-4 py-2">Nom</th>
+      <th class="border px-4 py-2">Domaine</th>
+      <th class="border px-4 py-2">Expérience</th>
+      <th class="border px-4 py-2">Disponibilité</th>
+      <th class="border px-4 py-2">Date dispo</th>
+      <th class="border px-4 py-2">Ville</th>
+      <th class="border px-4 py-2">CV</th>
+      <th class="border px-4 py-2">LinkedIn</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in consultants %}
+    <tr class="hover:bg-gray-50">
+      <td class="border px-4 py-2">{{ c.nom }}</td>
+      <td class="border px-4 py-2">{{ c.domaine }}</td>
+      <td class="border px-4 py-2">{{ c.experience }}</td>
+      <td class="border px-4 py-2">{{ c.disponibilite }}</td>
+      <td class="border px-4 py-2">{{ c.disponibilite_date|date:"d/m/Y" }}</td>
+      <td class="border px-4 py-2">{{ c.ville }}</td>
+      <td class="border px-4 py-2 text-center">
+        {% if c.cv %}
+          <a href="{{ c.cv.url }}" target="_blank" class="text-blue-600 underline">Télécharger</a>
+        {% else %}
+          —
+        {% endif %}
+      </td>
+      <td class="border px-4 py-2"><a href="{{ c.lien_linkedin }}" target="_blank" class="text-blue-600 underline">Profil</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

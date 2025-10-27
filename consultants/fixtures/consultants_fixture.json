@@ -1,0 +1,122 @@
+[
+  {
+    "model": "consultants.consultant",
+    "pk": 1,
+    "fields": {
+      "nom": "Anne Dupont",
+      "domaine": "Banque de détail",
+      "experience": "Projet transformation digitale, 8 ans",
+      "disponibilite": "Disponible (immédiate)",
+      "ville": "Paris",
+      "lien_linkedin": "https://www.linkedin.com/in/anne-dupont"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 2,
+    "fields": {
+      "nom": "Marc Lemaire",
+      "domaine": "Conformité / Risk",
+      "experience": "Pilotage conformité Bâle III, 10 ans",
+      "disponibilite": "Disponible (2 semaines)",
+      "ville": "Lyon",
+      "lien_linkedin": "https://www.linkedin.com/in/marc-lemaire"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 3,
+    "fields": {
+      "nom": "Sophie Martin",
+      "domaine": "Assurance vie",
+      "experience": "Optimisation produits assurance-vie, 7 ans",
+      "disponibilite": "Disponible (immédiate)",
+      "ville": "Nice",
+      "lien_linkedin": ""
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 4,
+    "fields": {
+      "nom": "Olivier Bernard",
+      "domaine": "Banque d'investissement",
+      "experience": "Modélisation financière, 12 ans",
+      "disponibilite": "Non disponible",
+      "ville": "Paris",
+      "lien_linkedin": "https://www.linkedin.com/in/olivier-bernard"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 5,
+    "fields": {
+      "nom": "Isabelle Roche",
+      "domaine": "Assurance dommages",
+      "experience": "Pricing & data, 9 ans",
+      "disponibilite": "Disponible (1 mois)",
+      "ville": "Bordeaux",
+      "lien_linkedin": "https://www.linkedin.com/in/isabelle-roche"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 6,
+    "fields": {
+      "nom": "Karim Haddad",
+      "domaine": "Transformation IT",
+      "experience": "Lead architect sur projet core-banking, 11 ans",
+      "disponibilite": "Disponible (immédiate)",
+      "ville": "Lille",
+      "lien_linkedin": "https://www.linkedin.com/in/karim-haddad"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 7,
+    "fields": {
+      "nom": "Marie-Claire Petit",
+      "domaine": "Risk assurance",
+      "experience": "Audit & contrôle interne, 6 ans",
+      "disponibilite": "Disponible (3 semaines)",
+      "ville": "Rennes",
+      "lien_linkedin": ""
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 8,
+    "fields": {
+      "nom": "Julien Moreau",
+      "domaine": "Banque privée",
+      "experience": "Conseil clientèle patrimoniale, 8 ans",
+      "disponibilite": "Disponible (2 mois)",
+      "ville": "Geneève",
+      "lien_linkedin": "https://www.linkedin.com/in/julien-moreau"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 9,
+    "fields": {
+      "nom": "Nadia El Khatib",
+      "domaine": "Conformité",
+      "experience": "KYC/AML, 5 ans",
+      "disponibilite": "Disponible (immédiate)",
+      "ville": "Marseille",
+      "lien_linkedin": "https://www.linkedin.com/in/nadia-el-khatib"
+    }
+  },
+  {
+    "model": "consultants.consultant",
+    "pk": 10,
+    "fields": {
+      "nom": "Thomas Dubois",
+      "domaine": "Assurance & Data",
+      "experience": "Data science appliquée assurance, 4 ans",
+      "disponibilite": "Disponible (1 semaine)",
+      "ville": "Nantes",
+      "lien_linkedin": "https://www.linkedin.com/in/thomas-dubois"
+    }
+  }
+]
