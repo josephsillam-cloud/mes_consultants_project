@@ -51,10 +51,10 @@ WSGI_APPLICATION = 'mes_consultants.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3'),
-        conn_max_age=600
+        default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
     )
 }
+
 
 
 AUTH_PASSWORD_VALIDATORS = []
