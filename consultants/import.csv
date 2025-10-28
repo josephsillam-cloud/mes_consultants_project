@@ -1,2 +1,9 @@
-DUBOIS Marie;Banque;10 ans;1 mois;Paris;Lien Linkedin
-SILLAM Jonathan;Assurance;12 ans;3 ans;Paris;Lien Linkedin
+# ⚙️ Configuration Django locale
+
+SECRET_KEY=django-insecure-7v0!gx8w#1t*9crd43%r$_3^=f4lg)@4-6j1l!6rjv*8h^y49r
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost,mes-consultants.onrender.com
+DATABASE_URL=sqlite:///db.sqlite3
+LANGUAGE_CODE=fr-fr
+TIME_ZONE=Europe/Paris
+
