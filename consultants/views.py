@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from .models import Consultant
+from django.contrib.auth.decorators import login_required
+
+@login_required
 
 def dashboard(request):
     date_filtre = request.GET.get('disponibilite_date')
